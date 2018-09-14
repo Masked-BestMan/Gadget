@@ -4,8 +4,8 @@
 ## v1.0.0
 #### ShadowPopupWindow
 
-- 仿UC底部弹出菜单。
-![image](https://github.com/Z-bm/Dainty/blob/master/img/start.gif)
+- 仿UC底部弹出菜单。<br>
+![image](https://github.com/Z-bm/Gadget/blob/master/img/shadow.gif)
 
 ###### 使用
 在project下build.gradle内添加
