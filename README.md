@@ -4,10 +4,10 @@
 ## v1.0.0
 #### ShadowPopupWindow
 
-- 仿UC底部弹出菜单。<br>
+* 仿UC底部弹出菜单。<br>
 ![image](https://github.com/Z-bm/Gadget/blob/master/img/popup.gif)
 
-###### 使用
+* 使用
 ```
 ShadowPopupWindow shadowPopupWindow=new ShadowPopupWindow(v, ViewGroup.LayoutParams.MATCH_PARENT, 600);
 shadowPopupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
@@ -17,7 +17,7 @@ shadowPopupWindow.shadowAbove(view);           //指定阴影背景在某个view
 shadowPopupWindow.showAsDropDown(view,0,0);    //使用该方法显示PopupWindow需要明确指定窗口的大小，不能使用WRAP_CONTENT
 ```
 
-###### 引用
+* 引用<br>
 在project下build.gradle内添加
 
 	allprojects {
