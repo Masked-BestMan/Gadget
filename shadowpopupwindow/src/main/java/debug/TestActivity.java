@@ -22,7 +22,7 @@ public class TestActivity extends AppCompatActivity {
         final View view=findViewById(R.id.bottom_bar);
         button=findViewById(R.id.menu);
         View v= LayoutInflater.from(this).inflate(R.layout.dark_popup_window,null);
-        final ShadowPopupWindow shadowPopupWindow=new ShadowPopupWindow(v, ViewGroup.LayoutParams.MATCH_PARENT, 400);
+        final ShadowPopupWindow shadowPopupWindow=new ShadowPopupWindow(v, ViewGroup.LayoutParams.MATCH_PARENT, 600);
         shadowPopupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         shadowPopupWindow.setOutsideTouchable(true);
         shadowPopupWindow.setFocusable(true);
