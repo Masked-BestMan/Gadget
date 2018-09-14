@@ -20,16 +20,18 @@ shadowPopupWindow.showAsDropDown(view,0,0);    //使用该方法显示PopupWindo
 * 引用<br>
 在project下build.gradle内添加
 
+```
 	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
 		}
 	}
+```
 
 在module下build.gradle内添加
-
+```
 	dependencies {
 	        implementation 'com.github.Z-bm:Gadget:v1.0.0'
 	}
-  
+```
