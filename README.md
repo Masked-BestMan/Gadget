@@ -5,7 +5,7 @@
 #### ShadowPopupWindow
 
 - 仿UC底部弹出菜单。<br>
-![image](https://github.com/Z-bm/Gadget/blob/master/img/popupwindow.gif)
+![image](https://github.com/Z-bm/Gadget/blob/master/img/popup.gif)
 
 ###### 使用
 在project下build.gradle内添加
