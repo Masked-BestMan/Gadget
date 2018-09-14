@@ -13,8 +13,8 @@ ShadowPopupWindow shadowPopupWindow=new ShadowPopupWindow(v, ViewGroup.LayoutPar
 shadowPopupWindow.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 shadowPopupWindow.setOutsideTouchable(true);
 shadowPopupWindow.setFocusable(true);
-shadowPopupWindow.shadowAbove(view);     //阴影背景在view上
-shadowPopupWindow.showAsDropDown(view,0,0);
+shadowPopupWindow.shadowAbove(view);           //指定阴影背景在某个view上显示，需要在显示PopupWindow前调用才有效果
+shadowPopupWindow.showAsDropDown(view,0,0);    //使用该方法显示PopupWindow需要明确指定窗口的大小，不能使用WRAP_CONTENT
 ```
 
 ###### 引用
