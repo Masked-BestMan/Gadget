@@ -84,6 +84,6 @@ allprojects {
 在module下build.gradle内添加
 ```
 dependencies {
-	implementation 'com.github.Z-bm:Gadget:v1.2.0'
+	implementation 'com.github.Z-bm:Gadget:latest_version'
 }
 ```
