@@ -1,5 +1,5 @@
 # Gadget
-自定义组件库
+自定义组件库 [![](https://www.jitpack.io/v/Z-bm/Gadget.svg)](https://www.jitpack.io/#Z-bm/Gadget)
 
 ## v1.2.0
 1. DragFrameLayout(仿微信朋友圈图片浏览效果)正式版
