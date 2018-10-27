@@ -1,1 +1,1 @@
-include ':app', ':shadowpopuplayout'
+include ':app', ':shadowpopuplayout', ':dragframelayout'

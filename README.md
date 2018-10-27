@@ -1,16 +1,21 @@
 # Gadget
 自定义组件库
 
-#### ShadowPopupLayout——仿UC弹出菜单
+## v1.2.0
+1. DragFrameLayout(仿微信朋友圈图片浏览效果)正式版
+#### 效果
+
+
+
 ## v1.1.0
 1. 更换弹出窗布局
 2. 增加自定义属性
 
 ## v1.0.0
-1. 正式版
+1. ShadowPopupLayout(仿UC弹出菜单)正式版
 
-效果
--
+#### 效果
+
 ![image](https://github.com/Z-bm/Gadget/blob/master/img/popup.gif)
 
 属性
@@ -79,6 +84,6 @@ allprojects {
 在module下build.gradle内添加
 ```
 dependencies {
-	implementation 'com.github.Z-bm:Gadget:v1.1.1'
+	implementation 'com.github.Z-bm:Gadget:v1.2.0'
 }
 ```
