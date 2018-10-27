@@ -5,7 +5,7 @@
 1. DragFrameLayout(仿微信朋友圈图片浏览效果)正式版
 #### 效果
 
-
+![image](https://github.com/Z-bm/Gadget/blob/master/img/drag.gif)
 
 ## v1.1.0
 1. 更换弹出窗布局
