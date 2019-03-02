@@ -2,12 +2,13 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="200dp">
-    <TextView
+    android:layout_height="match_parent"
+    android:background="#60000000"
+    android:id="@+id/popup_dark">
+
+    <FrameLayout
+        android:id="@+id/popup_container"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:text="这是菜单"
-        android:gravity="center"
-        android:background="@android:color/holo_green_dark"
-        android:layout_centerInParent="true"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
 </RelativeLayout>
