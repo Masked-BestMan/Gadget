@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 /**
  * created by @author 张倍铭 on 2018/12/18 10:27
  */
-public class PopupAgent {
+public class PopupAgent implements BaseWindow{
     private View popupWindow;
     private View popupContent;
     private boolean isShowing;
@@ -55,10 +55,12 @@ public class PopupAgent {
         this.margins=margins;
     }
 
+    @Override
     public boolean isShowing() {
         return isShowing;
     }
 
+    @Override
     public void show() {
         if (isShowing){
             return;
@@ -72,6 +74,7 @@ public class PopupAgent {
         isShowing = true;
     }
 
+    @Override
     public void dismiss() {
         if (!isShowing){
             return;

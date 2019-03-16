@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 
 
 @SuppressWarnings("unused")
-public class BottomDrawer extends FrameLayout{
+public class BottomDrawer extends FrameLayout implements BaseWindow{
     public static final int TOP = 0;
     public static final int BOTTOM = 1;
 
@@ -43,12 +43,13 @@ public class BottomDrawer extends FrameLayout{
 
     }
 
-
-    public void showPopupView() {
+    @Override
+    public void show() {
         popupAgent.show();
     }
 
-    public void disMissPopupView() {
+    @Override
+    public void dismiss() {
         popupAgent.dismiss();
     }
 
@@ -56,6 +57,7 @@ public class BottomDrawer extends FrameLayout{
         popupAgent.setMargins(new int[]{0,0,0,margin});
     }
 
+    @Override
     public boolean isShowing() {
         return popupAgent.isShowing();
     }

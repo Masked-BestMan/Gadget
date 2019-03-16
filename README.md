@@ -1,6 +1,9 @@
 # Gadget
 自定义组件库 [![](https://www.jitpack.io/v/Z-bm/Gadget.svg)](https://www.jitpack.io/#Z-bm/Gadget)
 
+## v1.2.2
+1. 修正BottomDrawer类关系
+
 ## v1.2.1
 1. 重新设计ShadowPopupLayout，更名BottomDrawer(底部弹出菜单)
 
@@ -25,8 +28,8 @@ BottomDrawer(原ShadowPopupLayout)方法
 -
 * setOnDismissListener(OnDismissListener onDismissListener)：弹出窗关闭监听
 * isShowing()：是否弹出
-* showPopupView()：弹出窗口
-* disMissPopupView()：关闭窗口
+* show()：弹出窗口
+* dismiss()：关闭窗口
 * setBottomMargin(int margin)：底部留白
 * getDrawerContent()：抽屉内容布局
 
