@@ -22,7 +22,7 @@ public class BottomDrawer extends FrameLayout implements BaseWindow{
     private int barLayout, windowLayout;
     private boolean isShowing;
     private OnDismissListener onDismissListener;
-    private PopupAgent popupAgent;
+    private PopupHelper popupHelper;
 
     public BottomDrawer(Context context, @LayoutRes int layoutRes) {
         super(context);
@@ -33,7 +33,7 @@ public class BottomDrawer extends FrameLayout implements BaseWindow{
         View popupWindow=LayoutInflater.from(context).inflate(R.layout.dark_popup_window,this,false);
         FrameLayout container=popupWindow.findViewById(R.id.popup_container);
         container.addView(drawerContentView);
-        popupAgent=new PopupAgent.Builder(context)
+        popupHelper =new PopupHelper.Builder(context)
                 .setPopupWindow(popupWindow)
                 .setPopupContent(container)
                 .setPopupDark(popupWindow.findViewById(R.id.popup_dark))
@@ -45,21 +45,21 @@ public class BottomDrawer extends FrameLayout implements BaseWindow{
 
     @Override
     public void show() {
-        popupAgent.show();
+        popupHelper.show();
     }
 
     @Override
     public void dismiss() {
-        popupAgent.dismiss();
+        popupHelper.dismiss();
     }
 
     public void setBottomMargin(int margin){
-        popupAgent.setMargins(new int[]{0,0,0,margin});
+        popupHelper.setMargins(new int[]{0,0,0,margin});
     }
 
     @Override
     public boolean isShowing() {
-        return popupAgent.isShowing();
+        return popupHelper.isShowing();
     }
 
 
@@ -73,7 +73,7 @@ public class BottomDrawer extends FrameLayout implements BaseWindow{
 
     public void setOnDismissListener(final OnDismissListener onDismissListener) {
         this.onDismissListener = onDismissListener;
-        popupAgent.setOnDismissListener(new PopupAgent.OnDismissListener() {
+        popupHelper.setOnDismissListener(new PopupHelper.OnDismissListener() {
             @Override
             public void onDismiss() {
                 if (onDismissListener!=null){

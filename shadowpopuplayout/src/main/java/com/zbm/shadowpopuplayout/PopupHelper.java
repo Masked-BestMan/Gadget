@@ -10,7 +10,7 @@ import android.widget.FrameLayout;
 /**
  * created by @author 张倍铭 on 2018/12/18 10:27
  */
-public class PopupAgent implements BaseWindow{
+public class PopupHelper implements BaseWindow{
     private View popupWindow;
     private View popupContent;
     private boolean isShowing;
@@ -19,7 +19,7 @@ public class PopupAgent implements BaseWindow{
     private int[] margins;
     private OnDismissListener onDismissListener;
 
-    private PopupAgent(Builder builder) {
+    private PopupHelper(Builder builder) {
         Context context = builder.context;
         this.popupWindow = builder.popupWindow;
         this.popupContent = builder.popupContent;
@@ -146,8 +146,8 @@ public class PopupAgent implements BaseWindow{
             return this;
         }
 
-        public PopupAgent build() {
-            return new PopupAgent(this);
+        public PopupHelper build() {
+            return new PopupHelper(this);
         }
     }
 
