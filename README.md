@@ -8,7 +8,7 @@
 1. 重新设计ShadowPopupLayout，更名BottomDrawer(底部弹出菜单)
 
 ## v1.2.0
-1. DragFrameLayout(仿微信朋友圈图片浏览效果)正式版
+1. 新增DragFrameLayout(仿微信朋友圈图片浏览效果)正式版
 #### 效果
 
 ![image](https://github.com/Z-bm/Gadget/blob/master/img/drag.gif)
